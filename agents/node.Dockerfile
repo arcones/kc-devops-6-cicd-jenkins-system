@@ -1,5 +1,5 @@
 
-FROM martaarcones/base-jenkins-agent
+FROM kctest2/base-jenkins-agent
 
 RUN apt-get install -qy nodejs
 

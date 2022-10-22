@@ -1,4 +1,4 @@
-FROM martaarcones/base-jenkins-agent
+FROM kctest2/base-jenkins-agent
 
 RUN add-apt-repository ppa:deadsnakes/ppa -y
 
