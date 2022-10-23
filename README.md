@@ -17,7 +17,7 @@ Characteristics of the required EC2 instance:
   - Mark Allow HTTP traffic from your IP
 - Storage: Create 30GiB gp2 root volume (non encrypted)
 
-Once created connect with the machine > go to EC2 dashboard > select the machine just created > connect > ssh client. Follow instructions to connect with it ussing ssh and the key pair you have created
+Once created connect with the machine > go to EC2 dashboard > select the machine just created > connect > ssh client. Follow instructions to connect with it using ssh and the key pair you have created
 
 ### 2. Instance provisioning
 
