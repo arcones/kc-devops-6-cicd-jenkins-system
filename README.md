@@ -20,7 +20,13 @@ Characteristics of the required EC2 instance:
 Once created connect with the machine > go to EC2 dashboard > select the machine just created > connect > ssh client. Follow instructions to connect with it ussing ssh and the key pair you have created
 
 ### 2. Instance provisioning
-
+1. Copy the contents of [1_machineProvisioning.sh](./1_machineProvisioning.sh) in a file in the machine.
+1. Give the file execution permissions with `sudo chmod +x 1_machineProvisioning.sh`
+1. Repeat the steps with [2_machineProvisioning.sh](./2_machineProvisioning.sh). Copy in a file in the machine and give it permissions to execute.
+1. Execute [1_machineProvisioning.sh](./1_machineProvisioning.sh). When the execution stops, reboot the machine with `sudo reboot`
+1. Connect again via ssh
+1. Execute [2_machineProvisioning.sh](./2_machineProvisioning.sh). It will prompt for some information
+6. Reboot the machine
 
 
 ### 3. Create public repo in jenkins
