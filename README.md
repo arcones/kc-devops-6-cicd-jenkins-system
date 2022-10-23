@@ -41,13 +41,17 @@ Once created connect with the machine > go to EC2 dashboard > select the machine
 
 ### 4. Add required credentials
 We will need credentials to:
-    1. Use our private repos in Github
-    2. Connect with the docker agents in a distributed build scenario
-    3. Upload artifacts to Pypi
+1. Use our private repos in Github
+1. Connect with the docker agents in a distributed build scenario
+1. Upload artifacts to Pypi
 
 #### Create the key to connect with the agents
 1. Go to manage jenkins > manage credentials > Stores scoped to Jenkins > System > Global credentials (unrestricted) > Add credentials
 1. Place "jenkins" as username and "jenkins" as password. As id set "ssh-agents-key". Leave the rest with the defaults. Click on create
+
+#### Add credentials to connect to Pypi
+1. Go to manage jenkins > manage credentials > Stores scoped to Jenkins > System > Global credentials (unrestricted) > Add credentials
+1. Add your username and password for Pypi. As id set "pypi-credentials". Leave the rest with the defaults. Click on create
 
 #### Create the key to acces github
 1. Go to manage jenkins > manage credentials > Stores scoped to Jenkins > System > Global credentials (unrestricted) > Add credentials
