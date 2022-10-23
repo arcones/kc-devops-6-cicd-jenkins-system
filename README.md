@@ -55,7 +55,7 @@ We will need credentials to:
 
 #### Create the key to acces github
 1. Go to manage jenkins > manage credentials > Stores scoped to Jenkins > System > Global credentials (unrestricted) > Add credentials
-1. Set the kind to "ssh username with private key". As id set "ssh-github-key". Usernames is "jenkins". Click on enter directly the private key and, in a terminal connected with the ec2 machine do `cat ~/.ssh/id_rsa` which will print the private key. Copy it carefully and provide it to Jenkins. Click on create
+1. Set the kind to "ssh username with private key". As id set "ssh-github-key". Username is "jenkins". Click on enter directly the private key and, in a terminal connected with the ec2 machine do `cat ~/.ssh/id_rsa` which will print the private key. Copy it carefully and provide it to Jenkins. Click on create
 
 #### Configure known host strategy
 
