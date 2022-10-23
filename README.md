@@ -28,8 +28,10 @@ Once created connect with the machine > go to EC2 dashboard > select the machine
 1. In the standard output it will appear a line similar to this `ssh-rsa <<alpahanumericChain>> jenkins`, copy it and add it to your github account > settings > ssh and gpg keys > new ssh key (add jenkins to the title of the key and paste the public key you just copied in the text field)
 1. Then reboot the machine with `sudo reboot`
 1. Connect again via ssh
-1. Execute [2_machineProvisioning.sh](./2_machineProvisioning.sh). It will prompt for a password to `ubuntu` user, set it to something you can remember as will be needed soon
-1. Pick the password jenkins is showing in the console output
+1. Execute [2_machineProvisioning.sh](./2_machineProvisioning.sh). 
+1. It will prompt for a password to `ubuntu` user, set it to something you can remember as will be needed soon
+1. Say 'yes' when it ask you to save Github identity to known hosts file.
+1. docker-compose will be triggered, pick the password jenkins container is showing in the console output
 
 ### 3. Jenkins configuration
 1. Go to AWS ec2 dashboard again > select your instance > Public IPv4 address > copy the IP
