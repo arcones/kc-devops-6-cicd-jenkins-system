@@ -69,7 +69,7 @@ Let's create in this instance with JobDSL the jobs we used to have:
 1. Go to new item > Set 0.Seed as name > freestyle project > OK
 1. Mark the checkbox `Add timestamps to the Console Output`
 1. In Build Steps > Process Job DSLs
-1. Mark the radio button "Use the provided DSL script" and enter in the text field the contents of [job.dsl](./job.dsl) with the SSH URL of the repo with Jenkinsfile
+1. Mark the radio button "Use the provided DSL script" and enter in the text field the contents of [job.dsl](./job.dsl) **with the SSH URL of your repo with Jenkinsfile**
 1. Click on save and run the job 0.Seed in the button "Build now". It will fail for script approval missing.
 1. Go to Manage Jenkins > In-process Script Approval and approve the script
 1. Run again the 0.Seed
