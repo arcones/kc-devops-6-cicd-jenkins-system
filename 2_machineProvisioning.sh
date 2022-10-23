@@ -4,26 +4,38 @@
 docker run hello-world
 
 ## Add password to ubuntu user
+echo
+echo
 echo "SET PASSWORD FOR ubuntu USER IN YOUR MACHINE, IT WILL BE REQUIRED AFTERWADS"
+echo
+echo
 
 sudo passwd ubuntu
 
 
-## Clone repo with agents
-git clone https://github.com/arcones/kc-devops-cicd-6-jenkins-system.git
+echo
+echo
+echo
 
-cd kc-devops-cicd-6-jenkins-system
+## Clone repo with agents
+git clone git@github.com:arcones/kc-devops-6-cicd-jenkins-system.git
+
+cd kc-devops-6-cicd-jenkins-system
 
 ## Prepare jenkins volume
 mkdir jenkins_home
 
 ## Open docker remote API
+echo
+echo
+echo "PASSWORD FOR ubuntu USER WILL BE REQUIRED NOW!"
+echo
+echo
+echo
+
 sudo mv docker.service /lib/systemd/system/docker.service && systemctl daemon-reload && service docker restart
 
 curl http://localhost:4243/version
-
-## Login in docker
-docker login
 
 ## Run jenkins
 docker-compose up
