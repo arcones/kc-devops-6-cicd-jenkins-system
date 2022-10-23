@@ -22,7 +22,7 @@ Once created connect with the machine > go to EC2 dashboard > select the machine
 ### 2. Instance provisioning
 
 1. Once inside the ec2 machine, create a file `vim 1_machineProvisioning.sh` and copy inside the contents of [1_machineProvisioning.sh](./1_machineProvisioning.sh). Save it
-1. Repeat the step with [2_machineProvisioning.sh](./2_machineProvisioning.sh). Create a file `vim 2_machineProvisioning.sh` and copy inside the contents of [2_machineProvisioning.sh](./2_machineProvisioning.sh). Save it
+1. Repeat the step with the second script. Create a file `vim 2_machineProvisioning.sh` and copy inside the contents of [2_machineProvisioning.sh](./2_machineProvisioning.sh). Save it
 1. Give both files execution permissions with `sudo chmod +x 1_machineProvisioning.sh 2_machineProvisioning.sh`
 1. Repeat the steps with [2_machineProvisioning.sh](./2_machineProvisioning.sh). Copy in a file in the machine and give it permissions to execute.
 1. Execute [1_machineProvisioning.sh](./1_machineProvisioning.sh).
