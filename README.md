@@ -1,6 +1,6 @@
 # kc-devops-6-cicd-jenkins-system
 
-Files needed to build a Jenkins instance
+Files needed to build a normalized Jenkins instance in AWS
 
 ## Instance creation in AWS
 Characteristics of the required EC2 instance:
