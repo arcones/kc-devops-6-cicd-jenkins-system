@@ -59,7 +59,7 @@ We will need credentials to:
 
 #### Configure known host strategy
 
-Last we need to configure security to connect with github. We go to manage Jenkins > configure global security >  Git Host Key Verification Configuration > Accept First connection (No verification?) VER COMO LO PONGO
+Last we need to configure security to connect with github. We go to manage Jenkins > configure global security >  Git Host Key Verification Configuration > Accept First connection
 
 ### 5. Last sessions recap
 Let's create in this instance with JobDSL the jobs we used to have:
