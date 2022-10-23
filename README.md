@@ -24,9 +24,8 @@ Once created connect with the machine > go to EC2 dashboard > select the machine
 1. Once inside the ec2 machine, create a file `vim 1_machineProvisioning.sh` and copy inside the contents of [1_machineProvisioning.sh](./1_machineProvisioning.sh). Save it
 1. Repeat the step with the second script. Create a file `vim 2_machineProvisioning.sh` and copy inside the contents of [2_machineProvisioning.sh](./2_machineProvisioning.sh). Save it
 1. Give both files execution permissions with `sudo chmod +x 1_machineProvisioning.sh 2_machineProvisioning.sh`
-1. Repeat the steps with [2_machineProvisioning.sh](./2_machineProvisioning.sh). Copy in a file in the machine and give it permissions to execute.
-1. Execute [1_machineProvisioning.sh](./1_machineProvisioning.sh).
-1. In the standard output it will appear a line similar to this `ssh-rsa <<alpahanumericChain>> jenkins`, copy it and add it to your github account > settings > ssh and gpg keys > new ssh key
+1. Execute [1_machineProvisioning.sh](./1_machineProvisioning.sh). It will ask for confirmation a couple of times, it is normal, just press enter.
+1. In the standard output it will appear a line similar to this `ssh-rsa <<alpahanumericChain>> jenkins`, copy it and add it to your github account > settings > ssh and gpg keys > new ssh kek (add jenkins to the title of the key and paste the public key you just copied in the text field)
 1. Then reboot the machine with `sudo reboot`
 1. Connect again via ssh
 1. Execute [2_machineProvisioning.sh](./2_machineProvisioning.sh). It will prompt for a password to `ubuntu` user, set it to something you can remember as will be prompted soon
