@@ -36,7 +36,7 @@ Once created connect with the machine > go to EC2 dashboard > select the machine
 ### 3. Jenkins configuration
 1. Go to AWS ec2 dashboard again > select your instance > Public IPv4 address > copy the IP
 1. Open your jenkins in the browser accessing to http:// and the your public IPv4 address. You should see jenkins asking the password you pick from console output, input it
-1. Install the following plugin: `folders`, `ssh agent`, `build timeout`, `timestamper`, `pipeline`, `pipeline: stage view`, `git`
+1. Install the following plugin: `folders`, `ssh build agents`, `build timeout`, `timestamper`, `pipeline`, `pipeline: stage view`, `git`, 
 1. Add an `admin` user with a password you can remember in the next screen. Leave the URL as it is in the next screen. Initial configuration is done.
 
 ### 4. Add required credentials
