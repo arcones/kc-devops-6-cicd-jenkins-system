@@ -62,6 +62,7 @@ We will need credentials to:
 Last we need to configure security to connect with github. We go to manage Jenkins > configure global security >  Git Host Key Verification Configuration > Accept First connection
 
 ### 5. Add docker cloud and agents
+1. Go to Manage Jenkins > Manage plugins > Available tab > Install `Job DSL`  and `docker` with restart
 1. Go to Manage Jenkins > Manage Nodes and Clouds > Configure Clouds
 1. Add new cloud > docker
 1. Docker cloud details > In the the Docker Host URI put tcp://172.17.0.1:4243
@@ -81,7 +82,6 @@ Last we need to configure security to connect with github. We go to manage Jenki
 ### 6. Ensure everything is working
 
 Let's create in this instance with JobDSL the job we used to have:
-1. Go to Manage Jenkins > Manage plugins > Available tab > Install `Job DSL`  and `docker` with restart
 1. As the restart kills our container, you will need to go to the terminal you have opened with the EC2 machine a run `cd kc-devops-6-cicd-jenkins-system/ && docker-compose up` again
 1. We then refresh the browser, Jenkins will be asking for the admin password, sign in there
 1. Go to new item > Set 0.Seed as name > freestyle project > OK
